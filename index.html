@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Fortune Cookie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🥠 Daily Fortune Cookie 🥠</h1>
+        <p class="tagline">Wisdom and joy, one cookie at a time</p>
+    </header>
+    
+    <div class="main-container">
+        <div class="cookie-container">
+            <img id="fortuneCookieImg" src="cute-fortune-cookiwe-pack.png" alt="Fortune Cookie" style="width: 320px; height: 320px; display: block; animation: float 3s ease-in-out infinite;">
+            <div class="fortune-paper" id="fortunePaper">
+                <div class="fortune-text" id="fortuneText"></div>
+                <div class="fortune-rating">
+                    <button class="clap-button" id="clapButton">👏</button>
+                    <span class="clap-count" id="clapCount">0</span>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn instagram" id="shareInstagramBtn">Instagram</button>
+                    <button class="share-btn facebook" id="shareFacebookBtn">Facebook</button>
+                    <button class="share-btn whatsapp" id="shareWhatsappBtn">WhatsApp</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="crack-button" id="crackButton">Crack Open Your Cookie</button>
+        
+        <button class="reset-button" id="resetButton">Reset</button>
+
+        <div class="category-selector">
+            <h3 id="categoryTitle"> Choose Your Fortune Category </h3>
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="general">General</button>
+                <button class="category-btn" data-category="love">Love</button>
+                <button class="category-btn" data-category="career">Career</button>
+                <button class="category-btn" data-category="health">Health</button>
+                <button class="category-btn" data-category="wealth">Wealth</button>
+            </div>
+        </div>
+
+        <div class="fortune-history" id="fortuneHistory">
+            <div class="history-title">Your Fortune History</div>
+            <div id="historyList"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Fortune Cookie Dashboard - Daily wisdom for your digital life</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
